@@ -25,3 +25,8 @@
     justify-content: space-between;
     align-items: flex-end;
 }
+.list-item {
+    max-width: 220px;
+    min-width: 220px;
+    margin: 20px;
+}

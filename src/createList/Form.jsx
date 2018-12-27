@@ -34,7 +34,7 @@ const Form = props => {
         />
         <TextField
             label="Quantidade"
-            name="quantity"
+            name="quantity" 
             value={''}
             onChange={() => {}}
             margin="normal"

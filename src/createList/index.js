@@ -1,22 +1,14 @@
-import React, { Component } from 'react'
+import React from 'react'
 
 
 import Form from  './Form'
 import CustomCard from '../common/CustomCard'
-import checkbox from '@material-ui/core/Checkbox'
 import Typography from '@material-ui/core/Typography'
-import Checkbox from '@material-ui/core/Checkbox';
+import Checkbox from '@material-ui/core/Checkbox'
+import { FontAwesomeIcon} from '@fortawesome/free-solid-svg-icons'
+import {} from '@fortawesome/react-fontawesome'
 
-export default class createList extends Component{
-    constructor(props){
-        super(props)
-        this.state = {
-
-        }
-    }
-    
-    render(){
-        return(
+const CreateList = props => (
             <div className="page-container">
                 <Form />
 
@@ -37,5 +29,12 @@ export default class createList extends Component{
             </div>
             </div>
         )
-    }
-}
+    const ListItemFooter = () => (
+        <div className="list-card-footer">
+            <div className="list-card-footer-actions">
+                
+            </div>
+        </div>
+    )
+
+export default CreateList

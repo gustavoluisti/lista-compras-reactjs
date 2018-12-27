@@ -5,8 +5,8 @@ import Form from  './Form'
 import CustomCard from '../common/CustomCard'
 import Typography from '@material-ui/core/Typography'
 import Checkbox from '@material-ui/core/Checkbox'
-import { FontAwesomeIcon} from '@fortawesome/free-solid-svg-icons'
-import {} from '@fortawesome/react-fontawesome'
+import { faTrash, faPen } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const CreateList = props => (
             <div className="page-container">
@@ -16,6 +16,7 @@ const CreateList = props => (
                 <CustomCard
                     link="#"
                     containerClass="list-item"
+                    footer={<ListItemFooter />}
                 >
                 <div>
                     <div className="list-item-header">
@@ -32,8 +33,18 @@ const CreateList = props => (
     const ListItemFooter = () => (
         <div className="list-card-footer">
             <div className="list-card-footer-actions">
-                
+            <FontAwesomeIcon 
+                    icon={faTrash}
+                    color="f50057"
+                    size="1x"
+                />
+                <FontAwesomeIcon 
+                    icon={faPen}
+                    color="f50057"
+                    size="1x"
+                />
             </div>
+            <p>Total: R$ 50</p>
         </div>
     )
 

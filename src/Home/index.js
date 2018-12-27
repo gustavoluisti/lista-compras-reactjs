@@ -4,7 +4,7 @@ import './Home.css'
 
 
 import NewList from './NewList'
-import List from '../List/List'
+import List from './List'
 
 const Home = props => {
     return (

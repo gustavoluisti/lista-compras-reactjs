@@ -5,7 +5,7 @@ import './Home.css'
 
 const NewList = props => {
     return (
-             <CustomCard containerClass="new-list-container">
+             <CustomCard link="/lista" containerClass="new-list-container">
                 <div>
                     <p className="title">Adicionar novas listas:</p>
                 </div>

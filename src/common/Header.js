@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 
-import AppBar from '@material-ui/core/AppBar';
+import AppBar from '@material-ui/core/AppBar'
+import { Link } from 'react-router-dom'
 
 export default class Header extends Component{
     render(){
@@ -8,7 +9,9 @@ export default class Header extends Component{
             <div>
                 <AppBar position="static" color="primary">
                     <div className="header">
-                        <p className="title">Lista </p>
+                        <Link to="/">
+                        <p className="title text-left">Lista </p>
+                        </Link>
                     </div>
                 </AppBar>
             </div>

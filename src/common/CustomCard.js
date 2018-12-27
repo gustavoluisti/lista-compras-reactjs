@@ -11,7 +11,7 @@ const CustomCard = props => {
     return(
         <div className={props.containerClass}>
             <Link to={props.link}>
-'                <Card className="card">
+                <Card className="card">
                     <CardActionArea className="card-action-area">
                         <CardContent className="card-content">
                             <div>

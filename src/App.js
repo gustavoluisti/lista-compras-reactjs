@@ -15,6 +15,9 @@ import Home from './Home'
 import createList from './createList'
 
 const theme = createMuiTheme({
+  typography:{
+    useNextVariants: true
+  },
   palette: {
     primary:{
       main: '#2196f3'

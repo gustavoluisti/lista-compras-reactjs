@@ -6,7 +6,7 @@ import ListItemFooter from '../createList/ListItemFooter'
 
 const ListItem = props => (
     <div className="list-items-container">
-                <CustomCard
+                <CustomCard 
                     link="#"
                     image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4GPlrnw9cdOVgBkkSPJOvBn08G7CGQG8H-Xm4Ssz18-3z856p"
                     containerClass="list-item"

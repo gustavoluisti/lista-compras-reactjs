@@ -9,6 +9,8 @@ import {
   Switch,
 } from 'react-router-dom';
 
+import { Provider } from 'react-redux'
+import store from './store'
 
 import Header from './common/Header'
 import Home from './Home'
@@ -31,18 +33,21 @@ const theme = createMuiTheme({
 class App extends Component {
   render() {
     return (
-      <MuiThemeProvider theme={theme}>
-        <Router>
-          <div>
-            <Header />
-            <Switch>
-              <Route path='/' exact component={Home} />
-              <Route path='/lista' component={createList}/>
-            </Switch>
-          </div>
-        
-        </Router>
-      </MuiThemeProvider>
+      <Provider store={store}>
+        <MuiThemeProvider theme={theme}>
+          <Router>
+            <div>
+              <Header />
+              <Switch>
+                <Route path='/' exact component={Home} />
+                <Route path='/lista' component={createList}/>
+              </Switch>
+            </div>
+          
+          </Router>
+        </MuiThemeProvider>
+      </Provider>
+     
         );
   }
 }
